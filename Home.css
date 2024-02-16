@@ -1,0 +1,65 @@
+.genericss{
+    padding-top: 25px;
+    color: #b9bbcf;
+    height: 350px;
+    
+    font-family: 'Franklin Gothic Medium';
+    background-color: rgb(107, 107, 106);
+}
+.gadha{
+    font-size: 90px;
+    /* font-weight: 700px; */
+    /* color: rgb(224, 247, 247); */
+}
+.play-btn{
+    cursor: pointer;
+    display:block;
+    border:2px solid #56CCF2;
+    border-radius: 50%;
+    padding:20px;
+    font-size: 30px;
+    font-weight:200;
+    margin:20px auto;
+    background:inherit;
+    color:#56CCF2;
+}
+.latest-album{
+    display: block;
+    border: 1px solid #56CCF2;
+    padding: 15px 30px;
+    font-size: 23px;
+    font-weight: 200;
+    margin: 10px auto;
+    background: inherit;
+    cursor: pointer;
+    color: white;
+}
+.xy{
+    box-sizing: border-box;
+}
+    .xyz{
+        display:flex;
+        margin-left: 450px;
+        margin-top: 50px;
+        /* margin-bottom: 20px; */
+    }
+    .xyz h5{
+        box-sizing: border-box;
+    /* margin-bottom: 20px; */
+    display: inline-block;
+    margin-right: 20px; /* Adjust the space between h5 tags */
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
+    }
+
+.xyz button{
+              
+            background-color: #8677f7;
+            /* Additional styles can be added here */
+            color: #ffffff; /* Text color */
+            padding: 10px 20px; /* Padding */
+            border: none; /* Remove border */
+            border-radius: 50px; /* Rounded corners */
+            cursor: pointer; /* Change cursor on hover */
+        }
+    
