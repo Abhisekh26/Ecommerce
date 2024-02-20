@@ -1,0 +1,26 @@
+/* .designitem img{
+    margin-left: 100px;
+    margin-top:70px;
+    width:500px;
+
+} */
+.designitem ul{
+    list-style: none;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 80rem;
+    display: flex;
+}
+.designitem li{
+    /* margin-left: 0%; */
+    margin-top:20px;
+    padding-left: 50px;
+    display:flex;
+}
+.designitem li img{
+    width:100%;
+}
+#form-floating{
+    margin-top: 20px;
+
+}
