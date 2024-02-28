@@ -1,16 +1,16 @@
 import React from "react";
-import { useRef } from "react";
+import { useRef,useContext } from "react";
 import Headerdisplay from "../Headerfolder/Headerdisplay";
 import { Ecommerce } from "../../Data/Auth-context";
-import { useContext } from "react";
+
 
 const Login = () => {
   const emailref = useRef();
   const passref = useRef();
-  const { setLogin } = useContext(Ecommerce);
-  const { login } = useContext(Ecommerce);
+ const authCtx= useContext(Ecommerce)
 
   async function verify(event) {
+    
     event.preventDefault();
     const email = emailref.current.value;
     const password = passref.current.value;
@@ -33,14 +33,20 @@ const Login = () => {
     );
     const resposne = await data;
     if (resposne.ok) {
+    
       const result = await resposne.json();
-      console.log(result.idToken);
-      setLogin(true);
-      localStorage.setItem("token",result.idToken)
-      window.location.href = "/store";
-      console.log(login);
+       authCtx.login(result.idToken)
+    localStorage.setItem("token",result.idToken)
+    
+      
+     window.location.href = "/home";
+      // console.log(login);
+      // token1=result.idToken
+      // console.log(token1)
     } else {
+      
       alert("invalid credentials");
+    
     }
   }
   return (
